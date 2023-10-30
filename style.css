@@ -99,8 +99,8 @@ header{
     top: 60px;
     height: 0;
     width: 300px;
-    background:rgba(255,255,255, 0.1) ;
-    backdrop-filter: blur(20px);
+    background:rgba(255,255,255, 0.4) ;
+    backdrop-filter: blur(40px);
     border-radius: 10px;
     overflow: hidden;
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -170,8 +170,8 @@ section#hero{
 #about .enlarge-on-hover {
     border-radius: 30%;
     transition: transform 0.3s ease;
-    width: 15rem; /* Establece el ancho deseado */
-    height: 15rem;
+    width: 25rem; /* Establece el ancho deseado */
+    height: 25rem;
 }
 
 #about img.enlarge-on-hover:first-child:hover {
