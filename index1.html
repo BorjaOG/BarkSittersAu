@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style1.css">
+    <title>BarkSittersAu</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href=""><img src="images/barksitters.png" alt=""></a></div>
+            <ul class="links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="" class="action-btn">Contact Us</a>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="" class="action-btn">Contact Us</a></li>
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+        <h1>Welcome</h1>
+        <p>Welcome to BarkSittersAu - Where Every Tail is a Happy Tail!</p>
+        </section>
+    </main>
+    <section id="about"> <h2>About Us</h2><img src="images/barksitters.png" alt="" class="enlarge-on-hover">
+        <div class="about-content">
+           
+            
+            <p>We're Borja and Diana, a nature-loving couple with a special fondness for dogs. Our mission is simple: ensuring your pets are cared for just like family. Whether it's daily walks or vacation house-sitting, we've got you covered. Your pets' happiness and well-being are our top priority.
+
+                Choose BarkSittersAu for pet care that feels like home.</p>
+        </div>
+        <div class="image">
+            <img src="images/miko.png" alt="">
+        </div>
+    </section>
+    
+    <script> const toggleBtn = document.querySelector('.toggle-btn')
+    const toggleBtnIcon =  document.querySelector('.toggle-btn i')
+    const dropDownMenu = document.querySelector('.dropdown-menu')
+    
+    toggleBtn.onclick = function(){
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ?'fa-solid fa-xmark'
+        :'fa-solid fa-bars'
+    }
+    </script>
+</body>
+</html>
