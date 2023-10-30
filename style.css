@@ -67,7 +67,7 @@ header{
     transform: scale(1.3);
 }
 .navbar .toggle-btn{
-    color: #ffa500;
+    color: #df9100;
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
@@ -79,8 +79,8 @@ header{
     padding: 0.7rem 1.2rem;
     border: none;
     outline: none;
-    border-radius: 20px;
-    font-size: 1rem;
+    border-radius: 30px;
+    font-size: 1.12rem;
     font-weight: bold;
     cursor: pointer;
     transition: scale 0.2 ease;
@@ -110,7 +110,7 @@ header{
     height: 240px;
 }
 .dropdown-menu li{
-    padding: 0.7rem;
+    padding: 0.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,6 +119,7 @@ header{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 25px;
 }
 
 /* HERO */
@@ -136,6 +137,9 @@ section#hero{
     font-size: 3rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
+}
+#hero p{
+    font-size: 1.5rem;
 }
 #about {
     background:linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);  /* Color de fondo */
@@ -161,7 +165,7 @@ section#hero{
 
 #about p {
     color: #FFB366;
-    font-size: 16px;
+    font-size: 25px;
     font-weight: 600;
 }
 #about img{ 
@@ -190,7 +194,7 @@ section#hero{
     padding: 10px 20px;
     border-radius: 40%;
     cursor: pointer;
-    border: 0.2px solid rgba(255,255,255, 0.1);
+    border: 0.2px solid #FFB366;
     transition: transform 0.2s;
 }
 .scroll-to-top:hover {
@@ -220,6 +224,9 @@ section#hero{
 @media(max-width:576px){
     .navbar .logo img{
         margin-top: 70px;
+    }
+    #about p {
+        font-size: 18px;
     }
     #about img{   
         width: 20rem; /* Establece el ancho deseado */
