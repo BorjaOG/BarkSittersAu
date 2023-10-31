@@ -51,15 +51,21 @@
         <div class="container">
             <div class="card">
                 <img src="images/sitter1.jpg" alt="">
-                <h4>Walks</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, excepturi.</p>
-                <a href="#">Leer mas...</a>
+                <h4>Dog Walking Services</h4>
+                <p>"We'll take your furry friend for a stroll and more when you can't.</p>
+                <a href="#" class="read-more-link">Read more...</a>
+                <div class="more-content">
+                    <p>Whether you need your pup to get some exercise, a ride to the vet, or a spa day, we've got you covered.</p>
+                </div>
             </div>    
                 <div class="card">
                     <img src="images/sitter3.jpg" alt="">
-                    <h4>Sitting</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, excepturi.</p>
-                    <a href="#">Leer mas...</a>               
+                    <h4>Pet Vacation Care</h4>
+                    <p>Leave your beloved pets in safe hands while you enjoy your vacation.</p>
+                    <a href="#" class="read-more-link">Read more...</a>  
+                    <div class="more-content">
+                        <p>Rest easy knowing your pets are well cared for and enjoying their own 'staycation' with us.</p>
+                    </div>            
         </div>          
         </section>
 
@@ -80,5 +86,16 @@
         :'fa-solid fa-bars'
     }
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.read-more-link').click(function(event) {
+            event.preventDefault();
+            $(this).toggleClass('active');
+            $(this).siblings('.more-content').slideToggle();
+        });
+    });
+    </script>
+    
 </body>
 </html>

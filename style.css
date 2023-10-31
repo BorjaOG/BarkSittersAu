@@ -198,8 +198,8 @@ section#hero{
 }
 .container .card {
     width: calc(50% - 115px); /* Establecemos el ancho de las cartas para que haya dos cartas una al lado de la otra con un espacio entre ellas */
-    min-width: 300px;
-    height: 430px;
+    min-width: 272px;
+    height: 480px;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -223,7 +223,7 @@ section#hero{
 }
 .container .card p{
     margin-top: 1.2rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.4rem;
     padding: 0 1rem;
     font-size: 18px;
     font-weight: 300;
@@ -234,6 +234,13 @@ section#hero{
     font-weight: 500;
     text-decoration: none;
     color: #c47e39;
+}
+.more-content {
+    display: none; 
+}
+
+.read-more-link.active {
+    display: none; 
 }
 /* ARROW */
 .scroll-to-top {
@@ -279,12 +286,15 @@ section#hero{
         margin-top: 3rem;
         color: #FFB366;
         }
+        .container .card p{
+            margin-bottom: 0.5rem;
+        }
+
         .action-btn{
             margin-top: 0;}
             .container {
                 justify-content: center; /* Centrar las tarjetas horizontalmente */
             }
-
 }
 @media(max-width:576px){
     .navbar .logo img{
@@ -303,8 +313,6 @@ section#hero{
         width: 21rem;
         height: auto;
     }
-    
-
     .dropdown-menu{
         top: 7rem;
         left: 2rem;
@@ -315,7 +323,7 @@ section#hero{
     }
     .container .card {
         width: calc(90% - 5px);
-        height: 415px;
+        height: 492px;
         border-radius: 8px;
         box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
         overflow: hidden;
@@ -324,6 +332,7 @@ section#hero{
         cursor: pointer;
         transition: all 0.25s;
     }
+    
     .container .card a{
         font-weight: 500;
         text-decoration: none;
