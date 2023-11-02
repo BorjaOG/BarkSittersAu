@@ -8,8 +8,9 @@
 }
 body{
     height: 100vh;
-    background-color: #000;
-    background-image:url('images/couple.jpg');
+    background-color: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+    background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);;
+    
     background-size: cover;
     background-position: center;
 }
