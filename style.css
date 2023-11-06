@@ -74,8 +74,6 @@ header{
     cursor: pointer;
     display: none;
 }
-
-
 .action-btn{
     margin-top: 2.5rem;
     background-color: #FFB366;
@@ -104,8 +102,8 @@ header{
     top: 60px;
     height: 0;
     width: 300px;
-    background:rgba(255,255,255, 0.4) ;
-    backdrop-filter: blur(40px);
+    background:rgba(204, 240, 204, 0.7) ;
+    backdrop-filter: blur(100px);
     border-radius: 10px;
     overflow: hidden;
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -144,6 +142,12 @@ section#hero{
 }
 #hero p{
     font-size: 1.5rem;
+}
+#hero img{
+    margin-top: 50px;
+    border-radius: 50%;
+    border: 4px solid #fca54f;
+    box-shadow: 0 0 5px #fca54f
 }
 
 /* ABOUT */
@@ -267,7 +271,8 @@ section#hero{
 /*RESPONSIVE */
 @media(max-width:992px){
     .navbar .links,
-    .navbar .action-btn{
+    .navbar .action-btn
+    {
         display: none;
     }
     a{
@@ -277,6 +282,12 @@ section#hero{
         display: block; 
         font-size: 1.6rem;     
         margin-top: 30px;
+        position: relative;
+        
+        border: 2px solid #fd9e3e; 
+        border-radius: 30%;
+        box-shadow: 0 0 2px #fca54f;
+        padding: 5px;
     }
     .dropdown-menu{
         display: block;
@@ -296,6 +307,16 @@ section#hero{
             .container {
                 justify-content: center; /* Centrar las tarjetas horizontalmente */
             }
+}
+@media(max-width:720px){
+    #hero img{
+        width: 520px;
+        height: 330px;
+        margin-top: 50px;
+        border-radius: 50%;
+        border: 4px solid #fca54f;
+        box-shadow: 0 0 5px #fca54f
+    }
 }
 @media(max-width:576px){
     .navbar .logo img{
@@ -317,10 +338,18 @@ section#hero{
     .dropdown-menu{
         top: 7rem;
         left: 2rem;
-        width: unset;       
+        width: unset;  
     }
     .action-btn{
         margin: 0;
+    }
+    #hero img{
+        width: 320px;
+        height: 230px;
+        margin-top: 50px;
+        border-radius: 50%;
+        border: 4px solid #fca54f;
+        box-shadow: 0 0 5px #fca54f
     }
     .container .card {
         width: calc(90% - 5px);
@@ -332,8 +361,7 @@ section#hero{
         text-align: center;
         cursor: pointer;
         transition: all 0.25s;
-    }
-    
+    } 
     .container .card a{
         font-weight: 500;
         text-decoration: none;
@@ -342,9 +370,29 @@ section#hero{
     .scroll-to-top {
         padding: 6px 12px; 
         font-size: 10px; 
-        border: 0.2px solid #FFB366; 
+        border: 0.6px solid #FFB366; 
+        box-shadow: 0 0 4px #fca54f;
     }
     .scroll-to-top:hover {
         transform: scale(1.05); 
+    }
+}
+@media(max-width:360px){
+    #hero img{
+        width: 220px;
+        height: 180px;
+        margin-top: 50px;
+        border-radius: 50%;
+        border: 4px solid #fca54f;
+        box-shadow: 0 0 5px #fca54f
+    }
+    #about img{   
+        width: 220px;
+        height: 180px;  
+        border-radius: 30%; 
+    }
+    #about img:first-child{
+        width: 220px;
+        height: 180px;  
     }
 }
