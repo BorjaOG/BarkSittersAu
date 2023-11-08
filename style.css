@@ -333,6 +333,10 @@ section#hero{
         cursor: pointer;
         margin-bottom: 30px; 
 }
+#contact p{
+    color: white;
+}
+
 #footer{
     background: #133917;
     display: flex;
@@ -365,8 +369,7 @@ section#hero{
         display: block; 
         font-size: 1.6rem;     
         margin-top: 30px;
-        position: relative;
-        
+        position: relative;  
         border: 2px solid #fd9e3e; 
         border-radius: 30%;
         box-shadow: 0 0 2px #fca54f;
